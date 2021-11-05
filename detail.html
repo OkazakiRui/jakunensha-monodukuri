@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="detail.css">
+  <title>シネマタンジェリン</title>
+</head>
+
+<body>
+  <header class="shadow">
+    <div class="c f-alibet">
+
+      <h1 class="f-ali"><img src="./logo.svg" alt="シネマタンジェリンのロゴ"></h1>
+      <nav class="pc">
+        <ul class="f-alibet">
+          <li><a href="./index.html">トップページ</a></li>
+          <li><a href="./index.html#search">映画検索</a></li>
+          <li><a href="./index.html#contents">作品一覧</a></li>
+          <li><a href="./news.html">ニュース</a></li>
+          <li><a href="./access.html">アクセス</a></li>
+          <li><a href="./yoyaku.html">予約一覧</a></li>
+        </ul>
+      </nav>
+      <nav class="sp">
+        <button onclick="document.getElementById('hum').classList.toggle('none')">三</button>
+        <ul class="f-alibet none shadow" id="hum">
+          <button onclick="document.getElementById('hum').classList.toggle('none')">✕</button>
+          <li><a href="./index.html">トップページ</a></li>
+          <li><a href="./index.html#search">映画検索</a></li>
+          <li><a href="./index.html#contents">作品一覧</a></li>
+          <li><a href="./news.html">ニュース</a></li>
+          <li><a href="./access.html">アクセス</a></li>
+          <li><a href="./yoyaku.html">予約一覧</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="detail shadow f-alibet c" id="detail">
+      <div class="detail-img"><img src="" alt=""></div>
+
+      <div class="detail-texts">
+        <h3>title<span>screening_time分</span></h3>
+        <p>description</p>
+        <p>評価:<span>score</span></p>
+        <p>ジャンル:<span>score</span></p>
+
+      </div>
+
+    </div>
+
+    <div class="contents f-bet c">
+      <div class="news">
+        <h3 class="f3">ニュース</h3>
+        <ul>
+          <li>1. <a href="#">2021/08/05 webサイト開設のお知らせ</a></li>
+          <li>2. <a href="#">2021/08/05 webサイト開設のお知らせ</a></li>
+          <li>3. <a href="#">2021/08/05 webサイト開設のお知らせ</a></li>
+        </ul>
+      </div>
+      <div class="sns">
+        <h3 class="f3">SNS</h3>
+        <div class="snsimage c-w">ここにSNSが入ります</div>
+      </div>
+      <div class="banner">
+        <h3 class="f3">おすすめ映画</h3>
+        <div class="bannerimage c-w">ここに映画の広告が入ります</div>
+        <div class="bannerimage c-w">ここに映画の広告が入ります</div>
+        <div class="bannerimage c-w">ここに映画の広告が入ります</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="shadow" id="access">
+    <div class="c f-bet">
+      <div class="sitemap">
+        <h3>サイトマップ</h3>
+        <ul class="f-alibet">
+          <li><a href="./index.html">トップページ</a></li>
+          <li><a href="./index.html#search">映画検索</a></li>
+          <li><a href="./index.html#contents">作品一覧</a></li>
+          <li><a href="./news.html">ニュース</a></li>
+          <li><a href="./access.html">アクセス</a></li>
+          <li><a href="./yoyaku.html">予約一覧</a></li>
+        </ul>
+
+      </div>
+      <div class="access">
+        <h3>アクセス</h3>
+        <div class="access-wrap">
+          <h4>住所</h4>
+          <p>
+            〒791-8057<br>
+            愛媛県松山市大可賀2-1-28
+          </p>
+        </div>
+        <div class="access-wrap">
+          <h4>TEL / FAX</h4>
+          <p>
+            TEL : 000-0000-0000<br>
+            FAX : 000-0000-0000
+          </p>
+        </div>
+        <div class="access-wrap">
+          <h4>営業時間</h4>
+          <p>
+            7:00 ~ 25:00
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <small>
+      <p>&copy;copyright 2021 シネマタンジェリン</p>
+    </small>
+  </footer>
+
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script src="./detail.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="index.css">
+  <title>シネマタンジェリン</title>
+</head>
+
+<body>
+  <header class="shadow">
+    <div class="c f-alibet">
+
+      <h1 class="f-ali"><img src="./logo.svg" alt="シネマタンジェリンのロゴ"></h1>
+      <nav class="pc">
+        <ul class="f-alibet">
+          <li><a href="./index.html">トップページ</a></li>
+          <li><a href="./index.html#search">映画検索</a></li>
+          <li><a href="./index.html#contents">作品一覧</a></li>
+          <li><a href="./news.html">ニュース</a></li>
+          <li><a href="./access.html">アクセス</a></li>
+          <li><a href="./yoyaku.html">予約一覧</a></li>
+        </ul>
+      </nav>
+      <nav class="sp">
+        <button onclick="document.getElementById('hum').classList.toggle('none')">三</button>
+        <ul class="f-alibet none shadow" id="hum">
+          <button onclick="document.getElementById('hum').classList.toggle('none')">✕</button>
+          <li><a href="./index.html">トップページ</a></li>
+          <li><a href="./index.html#search">映画検索</a></li>
+          <li><a href="./index.html#contents">作品一覧</a></li>
+          <li><a href="./news.html">ニュース</a></li>
+          <li><a href="./access.html">アクセス</a></li>
+          <li><a href="./yoyaku.html">予約一覧</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="firstview">
+      <div class="f-cen c">
+        <h2 class="f1 c-w">シネマタンジェリン</h2>
+        <p class="c-w">愛媛県松山市にあるミニシアター「シネマタンジェリン」へようこそ！<br>
+          当映画館では、映画評論家でもあるオーナーがセレクトした名作の数々を上映しています。</p>
+      </div>
+    </div>
+    <div id="search" class="search shadow f-alibet">
+      <div class="search-contents">
+        <h2 class="f2">作品検索</h2>
+        <div class="search-left f">
+          <div class="search-wrap">
+            <p>タイトル</p>
+            <input type="text">
+          </div>
+          <div class="search-wrap">
+            <p>おすすめ度</p>
+            <input type="number" min="0" max="100" step="10">以上
+          </div>
+          <div class="search-wrap">
+            <p>オンライン視聴</p>
+            <select>
+              <option value="">どちらでも良い</option>
+              <option value="1">可能</option>
+              <option value="0">不可</option>
+            </select>
+          </div>
+          <div class="search-wrap">
+            <p>ジャンル</p>
+            <select>
+              <option value="">選択してください</option>
+              <option value="ドキュメンタリー">ドキュメンタリー</option>
+              <option value="キッズアニメ">キッズアニメ</option>
+              <option value="ヒーロー">ヒーロー</option>
+              <option value="ノンフィクション">ノンフィクション</option>
+              <option value="アニメ">アニメ</option>
+              <option value="グルメ">グルメ</option>
+              <option value="ミステリー">ミステリー</option>
+              <option value="ホラー">ホラー</option>
+              <option value="バラエティ">バラエティ</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-right f-cen">
+        <p class="c-w"><span class="resultNum c-w f1" id="resultNum">0</span>　件の<br>映画が見つかりました</p>
+      </div>
+    </div>
+
+    <div id="contents" class="items-wrap c">
+      <h2 class="f2">作品一覧</h2>
+      <div class="items f" id="items">
+      </div>
+    </div>
+
+    <div class="contents f-bet c">
+      <div class="news">
+        <h3 class="f3">ニュース</h3>
+        <ul>
+          <li>1. <a href="#">2021/08/05 webサイト開設のお知らせ</a></li>
+          <li>2. <a href="#">2021/08/05 webサイト開設のお知らせ</a></li>
+          <li>3. <a href="#">2021/08/05 webサイト開設のお知らせ</a></li>
+        </ul>
+      </div>
+      <div class="sns">
+        <h3 class="f3">SNS</h3>
+        <div class="snsimage c-w">ここにSNSが入ります</div>
+      </div>
+      <div class="banner">
+        <h3 class="f3">おすすめ映画</h3>
+        <div class="bannerimage c-w">ここに映画の広告が入ります</div>
+        <div class="bannerimage c-w">ここに映画の広告が入ります</div>
+        <div class="bannerimage c-w">ここに映画の広告が入ります</div>
+      </div>
+    </div>
+
+
+    <div class="question c">
+      <h3 class="f3">よくある質問</h3>
+      <hr>
+      <div class="question-wrap">
+        <p>Q.チケットはいつから購入ができますか？</p>
+        <p>A.鑑賞日の7日前から購入可能です。</p>
+
+      </div>
+      <div class="question-wrap">
+        <p>Q.購入したチケットの払い戻しや日時変更はできますか？</p>
+        <p>A.申し訳ございませんが、購入後の払い戻しや変更はできませんのでご了承ください。</p>
+
+      </div>
+      <div class="question-wrap">
+        <p>Q.定休日はありますか？</p>
+        <p>A.定休日はございません。貸し切りのため一部シアタールームの上映が無い場合もありますのでご了承ください。</p>
+
+      </div>
+      <div class="question-wrap">
+        <p>Q.映画鑑賞以外でシアタールームを貸し切ることは出来ますか？</p>
+        <p>A.別の用途での利用も可能です。各種映像出力装置や配信用カメラなども完備していますので、まずはご相談ください。</p>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="shadow" id="access">
+    <div class="c f-bet">
+      <div class="sitemap">
+        <h3>サイトマップ</h3>
+        <ul class="f-alibet">
+          <li><a href="./index.html">トップページ</a></li>
+          <li><a href="./index.html#search">映画検索</a></li>
+          <li><a href="./index.html#contents">作品一覧</a></li>
+          <li><a href="./news.html">ニュース</a></li>
+          <li><a href="./access.html">アクセス</a></li>
+          <li><a href="./yoyaku.html">予約一覧</a></li>
+        </ul>
+
+      </div>
+      <div class="access">
+        <h3>アクセス</h3>
+        <div class="access-wrap">
+          <h4>住所</h4>
+          <p>
+            〒791-8057<br>
+            愛媛県松山市大可賀2-1-28
+          </p>
+        </div>
+        <div class="access-wrap">
+          <h4>TEL / FAX</h4>
+          <p>
+            TEL : 000-0000-0000<br>
+            FAX : 000-0000-0000
+          </p>
+        </div>
+        <div class="access-wrap">
+          <h4>営業時間</h4>
+          <p>
+            7:00 ~ 25:00
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <small>
+      <p>&copy;copyright 2021 シネマタンジェリン</p>
+    </small>
+  </footer>
+
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

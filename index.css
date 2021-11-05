@@ -1,0 +1,147 @@
+.firstview{
+  height: 500px;
+  background-image: linear-gradient(#00000050, #00000050), url(./m_27.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 250px;
+}
+.firstview > div {
+  flex-direction: column;
+  width: 600px;
+}
+h2 {
+  border-bottom: 5px solid white;
+  margin-bottom: 20px;
+}
+
+/* search */
+main {
+  position: relative;
+}
+.search{
+  position: absolute;
+  top: 400px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 800px;
+}
+.search-left{
+  flex-wrap: wrap;
+}
+.search p {
+  margin: 10px 0;
+}
+.search-wrap {
+  width: 50%;
+}
+.search-contents{
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+.search-right{
+  width: 40%;
+  height: 270px;
+  background-color: rgb(116, 16, 16);
+}
+
+/* items */
+.items{
+  flex-wrap: wrap;
+  row-gap: 30px;
+  margin-bottom: 50px;
+}
+.item {
+  width: 23%;
+  margin: 1%;
+  box-sizing: border-box;
+}
+.item-texts {
+  padding:10px 20px;
+}
+.item img {
+  width: 100%;
+}
+
+.question-wrap {
+  margin: 20px;
+}
+
+@media screen and (max-width:415px) {
+  .firstview{
+    height: 500px;
+    background-image: linear-gradient(#00000050, #00000050), url(./m_27.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .firstview > div {
+    flex-direction: column;
+    width: auto;
+  }
+  .firstview h2.f1 {
+    border-bottom: 5px solid white;
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  
+  /* search */
+  main {
+    position: inherit;
+  }
+  .search{
+    position: inherit;
+    top: 400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-left{
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .search-wrap {
+    width: 100%;
+  }
+  .search-contents{
+    padding: 20px 40px;
+  }
+  .search-right{
+    width: 100%;
+    height:140px;
+    background-color: rgb(116, 16, 16);
+  }
+  
+  /* items */
+  .items{
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-bottom: 50px;
+  }
+  .item {
+    width: 48%;
+    margin: 1%;
+    box-sizing: border-box;
+  }
+  .item-texts {
+    padding:10px 20px;
+  }
+  .item img {
+    width: 100%;
+  }
+  .items-wrap{
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .question {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
