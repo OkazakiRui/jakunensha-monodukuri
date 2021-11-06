@@ -70,7 +70,7 @@ $(function () {
   }
 
   $.ajax({
-    url: 'http://api.skilljapan.info/api/movie',
+    url: 'https://click.ecc.ac.jp/ecc/rokazaki/jakunenApi/api.json',
     dataType: 'json',
     type: 'get',
     cache: false,

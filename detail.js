@@ -1,15 +1,14 @@
 $(function () {
   const id = location.hash.slice(1);
-  const detailEl = document.getElementById("detail")
+  const detailEl = document.getElementById('detail');
   $.ajax({
-    url: `http://api.skilljapan.info/api/movie/${id}`,
-    dataType: "json",
-    type: "get",
+    url: `https://click.ecc.ac.jp/ecc/rokazaki/jakunenApi/api/${id}`,
+    dataType: 'json',
+    type: 'get',
     cache: false,
   })
     .done(function (data) {
       // console.log(data[0].title);
-
 
       if (data[0].streaming) {
         detailEl.innerHTML = `
@@ -22,7 +21,7 @@ $(function () {
         <a class="button" href="./yoyaku.html">予約する</a>
         <a class="button" href="./yoyaku.html">オンラインで視聴する</a>
       </div>
-      `
+      `;
       } else {
         detailEl.innerHTML = `
       <div class="detail-img"><img src="${data[0].image}" alt="${data[0].title}の画像"></div>
@@ -33,14 +32,12 @@ $(function () {
         <p>おすすめ度:<span>${data[0].score}%</span></p>
         <a class="button" href="./yoyaku.html">予約する</a>
       </div>
-      `
+      `;
       }
-
-
     })
     .fail(function (e1, e2, e3) {
       console.log(e1);
       console.log(e2);
       console.log(e3);
-    })
-})
+    });
+});
